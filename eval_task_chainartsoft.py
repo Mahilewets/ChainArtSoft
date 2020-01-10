@@ -10,11 +10,9 @@ input_data = input_file.read()
 if len(input_data) == 0:
     exit()
 
-msg = list()
+msg = []
 
-msg.append(input_data[0])
-
-for i in range(1, len(input_data)):
+for i in range(0, len(input_data)):
     curr_ch = input_data[i]
     if len(msg) == 0:
         msg.append(curr_ch)
